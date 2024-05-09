@@ -1,2 +1,0 @@
-# PythonBatch11MayPublic
-PythonBatch11MayPublic
