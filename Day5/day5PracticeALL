@@ -1,0 +1,599 @@
+#Pratiksha
+#Problem 4-
+
+input_list = [1,2,2,3,4,4,5]
+new1=[]
+
+for i in input_list:
+  if i not in new1:
+    new1.append(i)
+print(new1)
+
+#Problem 5
+string_list = ["Hello", "world", "this", "is", "Python"]
+
+
+str1=" ".join(string_list)
+
+print(str1)
+
+
+# Problem 6: Write a code to count the frequency of each character in a given string and print the result as a dictionary.
+
+input_string = "hello world"
+
+Freq={}
+
+for i in input_string:
+	if i in Freq:
+  	Freq[i] += 1
+  else:
+  	Freq[i] = 1
+print(Freq)
+
+# Problem 7: Given a list of tuples, where each tuple contains two elements, write a code to create a dictionary
+# where the first element of each tuple is the key and the second element is the value.
+
+tuple_list = [("a", 1), ("b", 2), ("c", 3)]
+
+dict1={}
+
+for i in tuple_list:
+	dict1[i[0]]=i[1]
+  
+print(dict1)
+
+
+# Problem 8: Write a code to find and print all the unique elements in a list that appear exactly once.
+
+input_list = [1, 2, 2, 3, 4, 4, 5, 6]
+new1=[]
+for i in input_list:
+  if i in new1:
+    new1.remove(i)
+  else:
+  	new1.append(i)
+
+print(new1)
+
+
+# Problem 9: Write a code to merge two dictionaries into one.
+
+dict1 = {"a": 1, "b": 2}
+dict2 = {"c": 3, "d": 4}
+
+for i in dict2.keys():
+  dict1[i]=dict2[i]
+
+print(dict1)
+
+# Problem 10: Given a string, write a code to reverse the string without using any built-in functions.
+
+input_string = "Python"
+
+rev=""
+for i in range(len(input_string)-1,-1,-1):
+	rev += input_string[i]
+
+print(rev)
+
+
+for s in input_string:
+	rev = s+rev
+print(rev)
+
+# Problem 11:
+n=5
+for i in range(n+1):
+  print("*"*i)
+  
+## Problem 12:
+n=5
+for i in range(n,-1,-1):
+  print("*"*i)
+
+  
+## Problem 13:
+n=5
+for i in range(1,n+1):
+  print(" "*(n-i)+"*"*i)
+
+##problem 14:
+
+n=5
+for i in range(1,n+1):
+  for j in range(1,i+1):
+    print(j,end='')
+  print('')
+
+
+
+
+
+
+
+
+
+
+#Romit
+
+#4
+input_list = [1, 2, 2, 3, 4, 4, 5]
+new_list=[]
+for num in input_list:
+  if num not in new_list:
+    new_list.append(num)
+print(new_list)
+
+#5
+string_list = ["Hello", "world", "this", "is", "Python"]
+
+result_string = " ".join(string_list)
+result_string
+
+#6
+
+frequency={}
+input_string="hello world"
+for letter in input_string:
+  if letter in frequency.keys():
+    frequency[letter]+=1
+  else:
+    frequency[letter]=1
+frequency
+
+#7
+tuple_list = [("a", 1), ("b", 2), ("c", 3)]
+dict={}
+for tup in tuple_list:
+	dict[tup[0]]=tup[1]
+print(dict)
+
+#8
+input_list = [1, 2, 2, 3, 4, 4, 5, 6]
+new_list=[]
+for num in input_list:
+  if num in new_list:
+    new_list.remove(num)
+  else:
+    new_list.append(num)
+new_list
+
+
+#9
+dict1 = {"a": 1, "b": 2}
+dict2 = {"c": 3, "d": 4}
+for keyval in dict2.keys():
+	dict1[keyval]=dict2[keyval]
+print(keyval)
+
+
+#10
+string="python"
+reverse_string=""
+for l_index in range(len(string)-1,-1,-1):
+  reverse_string+=string[l_index]
+print(reverse_string)
+
+
+#10
+string="python"
+reverse_string=""
+for letter in string:
+  reverse_string=letter+reverse_string
+print(reverse_string)
+
+
+#pattern
+for i in range(1,n+1,1):
+  print("*"*i)
+
+#reverse pattern
+for i in range(n,0,-1):
+  print("*"*i)
+
+#pattern3
+for i in range(n,0,-1):
+  string=(" "*(i-1))+("*"*(n-(i-1)))
+  print(string)
+
+
+
+
+
+
+#Shilpa
+pr:3
+numbers = [1, 2, 3, 4, 5]
+square_num={}
+for num in numbers:
+  square_num[num]=num*num
+print(square_num)
+
+pr:4
+list1 = [1, 2, 2, 3, 4, 4, 5]
+list2=[]
+for i in list1:
+  if i not in list2:
+    list2.append(i)
+print(list2)
+
+pr:5
+string_list = ["Hello", "world", "this", "is", "Python"]
+string = " ".join(string_list)
+
+pr:6
+list1="hello world"
+newdict={}
+for char in list1:
+  if char in newdict:
+    newdict[char]=newdict[char]+1
+  else 
+  	newdict[char]=1
+print(newdict)
+
+pr:7
+t1=[("a", 1), ("b", 2), ("c", 3)]
+newdict={}
+for i in t1:
+    newdict[i[0]]=i[1]
+print(newdict)
+
+pr:8
+input_list = [1, 2, 2, 3, 4, 4, 5, 6]
+newlst=[]
+for i in input_list:
+	if i in newlst:
+    newlst.remove(i)    
+  else:
+   newlst.append(i)
+print(newlst)
+
+pr:9
+dict1 = {"a": 1, "b": 2}
+dict2 = {"c": 3, "d": 4}
+for i in dict2.keys():
+  dict1[i]=dict2[i]
+print(dict1)
+
+pr:10
+str="python"
+revstr=""
+for i in str:
+  revstr=i+revstr
+
+pr:11
+# *
+# **
+# ***
+# ****
+# *****
+
+n=5
+for i in range(0,n+1):
+  print("*"*i)
+
+pr:12
+# *****
+# ****
+# ***
+# **
+# *
+
+n=5
+for i in range(n,0,-1):
+  print("*"*i)
+
+
+pr:13
+
+# Output:
+#     *
+#    **
+#   ***
+#  ****
+# *****
+
+n=5
+for i in range(0,n+1):
+  print((" "*(n-i))+("*"*i))
+
+
+
+pr:14
+# Output:
+# 1
+# 12
+# 123
+# 1234
+# 12345
+
+for i in range(0,n+1):
+	print(*i)
+
+
+
+
+
+
+#lakshami
+problem: 3
+number=[12345]
+d={}
+
+for i in number:
+    d[i]=i**2
+  
+print(d)
+
+problem:4
+input_list = [1, 2, 2, 3, 4, 4, 5]
+new_list=[]
+ for i in input_list:
+     if i not in new_list:
+        new_list.append(i)
+        
+  print(new_list)
+  
+problem:5
+string_list = ["Hello", "world", "this", "is", "Python"]
+
+output_string=" ".join(string_list)
+print(output_string)
+
+
+problem:6
+input_string = "Hello World"
+new_dic={} 
+
+for i in input_string:
+    if i not in new_dic:
+       new_dic[i] = 1
+    new_dic[i]+=1
+print(new_dic)
+
+problem:7
+tuple_list = [("a", 1), ("b", 2), ("c", 3)]
+dic={}
+
+for i in tuple_list:
+    dic[i[0]] = i[1]
+print(dic)
+
+problem:8
+input_list = [1, 2, 2, 3, 4, 4, 5, 6]
+new_list =[]
+for char in input_list:
+    if char not in new_list:
+       new_list.append(char)
+       
+    else:
+       new_list.remove(char)
+print(new_list)
+
+problem:9
+
+dict1 = {"a": 1, "b": 2}
+dict2 = {"c": 3, "d": 4}
+
+
+for i in dict2.keys():
+    dict1[keys]=dict2[keys]
+print(dict1)
+
+problem:10
+
+string="python"
+reverse_string=""
+
+for i in string:
+  reverse_string=i+reverse_string
+print(reverse_string)
+
+# Pattern 1: Right-Angled Triangle
+n = 5
+# Output:
+# *
+# **
+# ***
+# ****
+# *****
+
+for i in range(1,n+1):
+    print("*"*i)
+    
+# Pattern 3: Right-Angled Triangle with Leading Spaces
+print("Pattern 3:")
+n = 5
+# Output:
+#     *
+#    **
+#   ***
+#  ****
+# *****
+
+# Pattern 4: Increasing Numbers Triangle
+print("Pattern 4:")
+n = 5
+# Output:
+# 1
+# 12
+# 123
+# 1234
+# 12345
+
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j, end='')
+    print()
+    
+
+
+
+
+
+
+    
+ 
+        
+  
+  
+
+
+
+
+#Ayashree
+3: numbers = [1,2,3,4,5]
+dict = {}
+for i in numbers:
+  dict[i] = i**2
+print(dict)
+
+#4: input_list = [1,2,2,3,4,4,5]
+    unique_list=[]
+    for i in input_list:
+    	if i not in unique_list:
+      	a.append(i)
+    print(unique_list)
+#5: string_list = ["Hello", "world", "this", "is", "Python"]
+result_string = ""
+for str in string_list:
+  result_string = result_string+" "+str 
+print(result_string)
+
+string_list = ["Hello", "world", "this", "is", "Python"]
+outputlist = " ".join(string_list)
+print(outputlist)
+
+6: input_string = "hello world"
+d={}
+for i in input_string:
+  if i not in d:
+    d[i]=1
+  d[i]+=1
+print(d)
+
+7: tuple_list = [("a", 1), ("b", 2), ("c", 3)]
+d={}
+for i in tuple_list:
+  d[i[0]] = i[1]
+print(d)
+
+8: input_list = [1, 2, 2, 3, 4, 4, 5, 6]
+new_list =[]
+for chr in input_list:
+  if chr not in new_list:
+    new_list.append(chr)
+  else:
+    new_list.remove(chr)
+print(new_list)
+
+input_list = [1, 2, 2, 3, 4, 4, 5, 6]
+d={}
+for chr in input_list:
+  if chr not in d:
+    d[chr]=1
+  else:
+    d[chr]+=1
+for each in d.keys():
+  if d[each]==1:
+    print(each)
+
+9: dict1 = {"a": 1, "b": 2}
+dict2 = {"c": 3, "d": 4}
+for key in dict2:
+    dict1[key] = dict2[key]
+print(dict1)
+
+
+10: my_string = "Aryashree"
+reverse=""
+for i in my_string:
+  reverse = i+reverse
+print(reverse)
+
+  #patt1:n = 5
+  for i in range(1,n+1):
+    print("*" * i)
+    
+  n=5
+for i in range(n,0,-1):
+  print("*" * i)
+  
+  n=5
+for i in range(1,n+1):
+  print(" "*(n-i)+"*" * i)
+  
+n = 5
+for i in range(1,n+1):
+  for j in range(1,i+1):
+    print(j,end='')
+  print()
+
+
+
+#Mithun
+# Problem 5: Write a code to concatenate all strings in a list into a single string, separated by spaces.
+
+string_list = ["Hello", "world", "this", "is", "Python"]
+# Problem 6: Write a code to count the frequency of each character in a given string and print the result as a dictionary.
+
+input_string = "hello world"
+
+# Problem 7: Given a list of tuples, where each tuple contains two elements, write a code to create a dictionary
+# where the first element of each tuple is the key and the second element is the value.
+
+tuple_list = [("a", 1), ("b", 2), ("c", 3)]
+
+# Problem 8: Write a code to find and print all the unique elements in a list that appear exactly once.
+input_list = [1, 2, 2, 3, 4, 4, 5, 6]
+
+# Problem 9: Write a code to merge two dictionaries into one.
+
+dict1 = {"a": 1, "b": 2}
+dict2 = {"c": 3, "d": 4}
+# Problem 10: Given a string, write a code to reverse the string without using any built-in functions.
+
+input_string = "Python"
+
+
+# Pattern 1: Right-Angled Triangle
+n = 5
+# Output:
+# *
+# **
+# ***
+# ****
+# *****
+
+
+# Pattern 2: Inverted Right-Angled Triangle
+# Output:
+# *****
+# ****
+# ***
+# **
+# *
+
+
+# Pattern 3: Right-Angled Triangle with Leading Spaces
+print("Pattern 3:")
+n = 5
+# Output:
+#     *
+#    **
+#   ***
+#  ****
+# *****
+
+
+# Pattern 4: Increasing Numbers Triangle
+print("Pattern 4:")
+n = 5
+# Output:
+# 1
+# 12
+# 123
+# 1234
+# 12345
+
